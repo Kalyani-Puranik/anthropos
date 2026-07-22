@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Abstract geometric composition of overlapping navy panels and coral bar chart shapes representing the Vantage OS dashboard project">
+  <rect width="800" height="1000" fill="#14212F"/>
+  <rect x="0" y="0" width="800" height="1000" fill="#1A2A3D"/>
+  <g opacity="0.5" stroke="#FFFFFF" stroke-opacity="0.08">
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="0" y1="750" x2="800" y2="750"/>
+    <line x1="200" y1="0" x2="200" y2="1000"/>
+    <line x1="400" y1="0" x2="400" y2="1000"/>
+    <line x1="600" y1="0" x2="600" y2="1000"/>
+  </g>
+  <rect x="90" y="560" width="620" height="300" rx="28" fill="#22364C" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <g>
+    <rect x="140" y="740" width="60" height="80" rx="10" fill="#5B646F"/>
+    <rect x="220" y="700" width="60" height="120" rx="10" fill="#717982"/>
+    <rect x="300" y="650" width="60" height="170" rx="10" fill="#ED524A"/>
+    <rect x="380" y="690" width="60" height="130" rx="10" fill="#717982"/>
+    <rect x="460" y="620" width="60" height="200" rx="10" fill="#ED524A"/>
+    <rect x="540" y="710" width="60" height="110" rx="10" fill="#5B646F"/>
+  </g>
+  <circle cx="620" cy="230" r="90" fill="#ED524A" opacity="0.9"/>
+  <circle cx="620" cy="230" r="90" fill="none" stroke="#1A2A3D" stroke-width="2"/>
+  <rect x="90" y="140" width="300" height="160" rx="24" fill="#22364C" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <rect x="122" y="180" width="140" height="16" rx="8" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="122" y="212" width="200" height="12" rx="6" fill="#969595"/>
+  <rect x="122" y="240" width="90" height="12" rx="6" fill="#969595"/>
+</svg>

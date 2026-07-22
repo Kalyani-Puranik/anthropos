@@ -1,0 +1,59 @@
+/* ==========================================================================
+   ANTHROPOS — ANIMATIONS
+   GSAP drives most motion via JS; this file holds keyframes, starting
+   states for scroll-reveals, and the reduced-motion escape hatch.
+   ========================================================================== */
+
+/* Elements GSAP will animate in start invisible via this class, so there is
+   no flash-of-unstyled-content if JS is slow to attach. Removed by JS on init
+   for users who have JS disabled or prefer-reduced-motion. */
+.js-reveal { opacity: 0; }
+.js-reveal-up { opacity: 0; transform: translateY(28px); }
+.js-reveal-scale { opacity: 0; transform: scale(0.92); }
+
+html.no-js .js-reveal,
+html.no-js .js-reveal-up,
+html.no-js .js-reveal-scale,
+html.reduced-motion .js-reveal,
+html.reduced-motion .js-reveal-up,
+html.reduced-motion .js-reveal-scale {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+@keyframes float-y-rev {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(14px); }
+}
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(1.06); }
+}
+
+.float { animation: float-y 6s var(--ease-in-out) infinite; }
+.float-rev { animation: float-y-rev 7s var(--ease-in-out) infinite; }
+.spin-slow { animation: spin-slow 40s linear infinite; }
+.pulse-soft { animation: pulse-soft 4s var(--ease-in-out) infinite; }
+
+html.reduced-motion .float,
+html.reduced-motion .float-rev,
+html.reduced-motion .spin-slow,
+html.reduced-motion .pulse-soft {
+  animation: none !important;
+}
+
+/* Magnetic buttons: JS sets transform via inline style on mousemove; this
+   just provides the smoothing transition for the release/reset. */
+.magnetic { transition: transform 0.35s var(--ease-out); }
+
+/* Mobile / touch: no custom cursor, no magnetic pull */
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot { display: none !important; }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Anthropos — Design and growth studio for software companies">
+  <rect width="1200" height="630" fill="#1A2A3D"/>
+  <g opacity="0.5" stroke="#FFFFFF" stroke-opacity="0.08">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+  </g>
+  <circle cx="1020" cy="140" r="160" fill="#ED524A" opacity="0.9"/>
+  <rect x="760" y="380" width="300" height="180" rx="28" fill="#22364C" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <path d="M100 120 L136 40 L172 120 L154 120 L136 78 L118 120 Z" fill="#FFFFFF"/>
+  <circle cx="184" cy="46" r="16" fill="#ED524A"/>
+  <text x="100" y="220" font-family="Space Grotesk, Arial, sans-serif" font-size="56" font-weight="600" fill="#FFFFFF">Anthropos</text>
+  <text x="100" y="270" font-family="Inter, Arial, sans-serif" font-size="24" fill="#C7CDD4">Design and growth studio for software companies</text>
+</svg>

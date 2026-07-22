@@ -1,0 +1,127 @@
+/* ==========================================================================
+   ANTHROPOS — DESIGN TOKENS
+   Single source of truth for color, type, spacing, radius, motion.
+   Dark (Navy) is the default surface theme; [data-theme="light"] inverts it.
+   ========================================================================== */
+
+:root {
+
+  /* ---- Brand color ramp ------------------------------------------------ */
+  --navy:        #1A2A3D;
+  --navy-rgb:    26, 42, 61;
+  --navy-2:      #22364C;   /* one step up from navy, for raised panels   */
+  --navy-3:      #14212F;   /* one step down, for recessed panels         */
+
+  --white:       #FFFFFF;
+  --white-rgb:   255, 255, 255;
+
+  --coral:       #ED524A;
+  --coral-rgb:   237, 82, 74;
+  --coral-dim:   #C63F39;   /* pressed / active state of coral            */
+
+  --gray-dark:   #5B646F;
+  --gray-mid:    #717982;
+  --gray-light:  #969595;
+
+  /* ---- Semantic surface tokens (theme-swappable) ----------------------- */
+  --surface-0:        var(--navy);        /* page background            */
+  --surface-1:        var(--navy-2);      /* card / raised surface      */
+  --surface-2:        var(--navy-3);      /* recessed / input surface   */
+  --surface-inverse:  var(--white);
+
+  --text-primary:     var(--white);
+  --text-secondary:   #C7CDD4;
+  --text-muted:       var(--gray-light);
+  --text-on-coral:    var(--white);
+  --text-on-inverse:  var(--navy);
+
+  --border-subtle:    rgba(var(--white-rgb), 0.10);
+  --border-strong:    rgba(var(--white-rgb), 0.20);
+
+  --accent:           var(--coral);
+  --accent-active:    var(--coral-dim);
+
+  /* ---- Typography -------------------------------------------------------
+     Display: Space Grotesk — geometric, confident, used with restraint
+     Body:    Inter — neutral, legible workhorse
+     Utility: Space Mono — small tracked-out labels only (never headings)
+  ------------------------------------------------------------------------- */
+  --font-display: 'Space Grotesk', 'Arial', sans-serif;
+  --font-body:    'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:    'Space Mono', 'Courier New', monospace;
+
+  --fs-eyebrow:   0.75rem;    /* 12px */
+  --fs-body-sm:   0.9375rem; /* 15px */
+  --fs-body:      1.0625rem; /* 17px */
+  --fs-body-lg:   1.25rem;   /* 20px */
+  --fs-h4:        1.5rem;    /* 24px */
+  --fs-h3:        clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
+  --fs-h2:        clamp(2.25rem, 1.7rem + 2.4vw, 3.5rem);
+  --fs-h1:        clamp(2.75rem, 1.9rem + 4vw, 5.25rem);
+  --fs-stat:      clamp(2.5rem, 1.9rem + 2.6vw, 4rem);
+
+  --lh-tight:  1.05;
+  --lh-snug:   1.25;
+  --lh-normal: 1.55;
+
+  --ls-eyebrow: 0.14em;
+  --ls-tight:   -0.02em;
+
+  /* ---- Layout / grid ---------------------------------------------------- */
+  --container-max:   1320px;
+  --section-pad-y:   140px;
+  --section-pad-y-m: 88px;
+  --pad-x-desktop:   80px;
+  --pad-x-tablet:    32px;
+  --pad-x-mobile:    20px;
+  --grid-cols:       12;
+  --grid-gap:        24px;
+
+  /* ---- Radius (rounded-rectangle system) --------------------------------
+     One consistent radius scale is the backbone of the modular block system.
+  ------------------------------------------------------------------------- */
+  --r-xs:  10px;
+  --r-sm:  16px;
+  --r-md:  24px;
+  --r-lg:  32px;
+  --r-xl:  48px;
+  --r-full: 999px;
+
+  /* ---- Elevation ---------------------------------------------------------*/
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.18);
+  --shadow-md: 0 12px 32px rgba(0,0,0,0.28);
+  --shadow-lg: 0 24px 64px rgba(0,0,0,0.36);
+  --shadow-coral-glow: 0 0 0 0 rgba(var(--coral-rgb), 0);
+
+  /* ---- Motion ------------------------------------------------------------*/
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:   150ms;
+  --dur-base:   320ms;
+  --dur-slow:   600ms;
+
+  --nav-h: 92px;
+  --nav-h-scrolled: 72px;
+}
+
+/* ---- Light theme override ---------------------------------------------
+   Inverts surfaces while keeping coral strictly an accent in both themes.
+--------------------------------------------------------------------------*/
+:root[data-theme="light"] {
+  --surface-0:       var(--white);
+  --surface-1:       #F3F4F6;
+  --surface-2:       #E8EAED;
+  --surface-inverse: var(--navy);
+
+  --text-primary:    var(--navy);
+  --text-secondary:  #3E4A59;
+  --text-muted:      var(--gray-mid);
+  --text-on-inverse: var(--white);
+
+  --border-subtle:   rgba(var(--navy-rgb), 0.08);
+  --border-strong:   rgba(var(--navy-rgb), 0.16);
+
+  --shadow-sm: 0 2px 12px rgba(26,42,61,0.08);
+  --shadow-md: 0 12px 32px rgba(26,42,61,0.12);
+  --shadow-lg: 0 24px 64px rgba(26,42,61,0.16);
+}

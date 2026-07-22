@@ -1,0 +1,158 @@
+/* ==========================================================================
+   ANTHROPOS — SECTIONS
+   ========================================================================== */
+
+/* ---- Background texture (shared, <8% opacity, purely decorative) --------*/
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(var(--white-rgb),0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--white-rgb),0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.07;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, black 40%, transparent 100%);
+}
+:root[data-theme="light"] .bg-grid {
+  background-image:
+    linear-gradient(rgba(26,42,61,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26,42,61,0.08) 1px, transparent 1px);
+}
+.bg-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(var(--white-rgb),0.14) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+/* ---- Hero ------------------------------------------------------------- */
+.hero {
+  padding-top: calc(var(--nav-h) + 64px);
+  padding-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.hero__eyebrow { margin-bottom: 28px; }
+.hero h1 { margin-bottom: 28px; }
+.hero__sub { max-width: 480px; margin-bottom: 40px; }
+.hero__ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero__proof {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-subtle);
+}
+.hero__proof-item { text-align: left; }
+.hero__proof-num {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.hero__proof-label { font-size: 0.8125rem; color: var(--text-muted); }
+
+.hero__stage {
+  position: relative;
+  height: 560px;
+}
+.hero__stage svg { width: 100%; height: 100%; overflow: visible; }
+
+/* ---- Services ----------------------------------------------------------*/
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.services__grid .card:nth-child(3n+2) { transform: translateY(20px); }
+.services__grid .card:nth-child(3n+2):hover { transform: translateY(14px); }
+
+/* ---- Why choose us -------------------------------------------------------*/
+.why {
+  position: relative;
+}
+.why__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.why__chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 56px;
+}
+
+/* ---- Process ------------------------------------------------------------*/
+.process__grid { margin-top: 24px; }
+.process__step-desc { max-width: 240px; font-size: 0.9375rem; }
+
+/* ---- Portfolio ------------------------------------------------------------*/
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.work__grid > *:nth-child(3n+1) { grid-row: span 2; }
+.work__grid > *:nth-child(3n+1) .work-card__media { aspect-ratio: 4/5; }
+
+/* ---- Testimonials ---------------------------------------------------------*/
+.testimonials { overflow: hidden; }
+.testimonials__viewport {
+  overflow: hidden;
+  margin-inline: calc(var(--pad-x-desktop) * -1);
+  padding-inline: var(--pad-x-desktop);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
+}
+
+/* ---- FAQ -------------------------------------------------------------------*/
+.faq__layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 64px;
+}
+.faq__side p { margin-top: 16px; max-width: 340px; }
+
+/* ---- Contact -----------------------------------------------------------*/
+.contact {
+  position: relative;
+}
+.contact__inner {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: flex-start;
+}
+.contact__side h2 { margin-bottom: 24px; }
+.contact__meta { margin-top: 48px; display: flex; flex-direction: column; gap: 16px; }
+.contact__meta-item { display: flex; align-items: center; gap: 14px; }
+.contact__meta-item svg { width: 20px; height: 20px; color: var(--accent); flex: none; }
+.contact__panel {
+  background: var(--surface-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  padding: 40px;
+}
+
+/* ---- Section dividers (tiny geometric decoration) -----------------------*/
+.section-deco {
+  position: absolute;
+  width: 120px; height: 120px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border-subtle);
+  opacity: 0.5;
+  pointer-events: none;
+}

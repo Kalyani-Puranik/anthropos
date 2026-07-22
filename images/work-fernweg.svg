@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Abstract geometric composition of concentric coral circles and a rounded card representing the Fernweg AI brand and launch project">
+  <rect width="800" height="600" fill="#1A2A3D"/>
+  <circle cx="580" cy="300" r="240" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <circle cx="580" cy="300" r="180" fill="none" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <circle cx="580" cy="300" r="120" fill="#ED524A" opacity="0.85"/>
+  <rect x="70" y="120" width="340" height="360" rx="28" fill="#22364C" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <rect x="106" y="160" width="120" height="120" rx="20" fill="#14212F"/>
+  <rect x="242" y="160" width="130" height="56" rx="14" fill="#ED524A"/>
+  <rect x="242" y="228" width="130" height="52" rx="14" fill="#5B646F"/>
+  <rect x="106" y="304" width="266" height="16" rx="8" fill="#969595"/>
+  <rect x="106" y="336" width="200" height="16" rx="8" fill="#969595"/>
+  <rect x="106" y="392" width="140" height="44" rx="22" fill="#ED524A"/>
+</svg>

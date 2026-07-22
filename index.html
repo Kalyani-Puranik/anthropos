@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-resolving no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anthropos — Design &amp; Growth Studio for Software Companies</title>
+<meta name="description" content="Anthropos is a design and marketing studio helping SaaS, AI, and B2B software companies scale through brand identity, UI/UX, web design, and performance marketing.">
+<meta name="author" content="Anthropos">
+<link rel="canonical" href="https://www.anthropos.studio/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Anthropos">
+<meta property="og:title" content="Anthropos — Design & Growth Studio for Software Companies">
+<meta property="og:description" content="Brand identity, UI/UX, web design, and performance marketing for SaaS and AI companies. One studio, one system.">
+<meta property="og:url" content="https://www.anthropos.studio/">
+<meta property="og:image" content="https://www.anthropos.studio/images/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Anthropos — Design & Growth Studio for Software Companies">
+<meta name="twitter:description" content="Brand identity, UI/UX, web design, and performance marketing for SaaS and AI companies.">
+<meta name="twitter:image" content="https://www.anthropos.studio/images/og-image.svg">
+
+<link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+<link rel="apple-touch-icon" href="icons/favicon.svg">
+<meta name="theme-color" content="#1A2A3D">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Anthropos",
+  "url": "https://www.anthropos.studio/",
+  "logo": "https://www.anthropos.studio/icons/favicon.svg",
+  "description": "Design and growth studio helping software companies scale through brand identity, UI/UX, web design, and performance marketing.",
+  "sameAs": [
+    "https://www.linkedin.com/company/anthropos-studio",
+    "https://www.instagram.com/anthropos.studio",
+    "https://x.com/anthropos_studio"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Anthropos",
+  "image": "https://www.anthropos.studio/images/og-image.svg",
+  "description": "Brand identity, UI/UX, web design, and performance marketing for SaaS, AI, and B2B software companies.",
+  "areaServed": "Worldwide",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "priceRange": "$$$"
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="brand" aria-label="Anthropos home">
+      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#1A2A3D"/>
+        <path d="M20 46 L32 16 L44 46 L37 46 L32 32 L27 46 Z" fill="#FFFFFF"/>
+        <circle cx="47" cy="17" r="9" fill="#ED524A"/>
+      </svg>
+      Anthropos
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#why">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4 6.8 6.8 0 0 0 20 14.5Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.6M12 18.9v2.6M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2.5 12h2.6M18.9 12h2.6M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>
+      </button>
+      <a href="#contact" class="btn btn--primary btn--sm">Book a call</a>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav__mobile-panel" id="mobilePanel">
+    <a href="#why">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn--primary">Book a call</a>
+  </div>
+</header>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<main id="main">
+<div id="top"></div>
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow hero__eyebrow">Anthropos — Design &amp; Growth Studio</p>
+        <h1 id="hero-heading" class="js-reveal-up">Design your software company won't outgrow.</h1>
+        <p class="lede hero__sub js-reveal-up">We build brand identity, product design, and performance marketing systems for SaaS and AI teams who are done improvising. One studio, one system, fewer handoffs.</p>
+        <div class="hero__ctas js-reveal-up">
+          <a href="#contact" class="btn btn--primary magnetic">Book a strategy call</a>
+          <a href="#work" class="btn btn--secondary magnetic">See our work</a>
+        </div>
+        <div class="hero__proof js-reveal-up">
+          <div class="hero__proof-item"><div class="hero__proof-num">120+</div><div class="hero__proof-label">Projects shipped</div></div>
+          <div class="hero__proof-item"><div class="hero__proof-num">98%</div><div class="hero__proof-label">Client satisfaction</div></div>
+          <div class="hero__proof-item"><div class="hero__proof-num">72 hrs</div><div class="hero__proof-label">Design turnaround</div></div>
+        </div>
+      </div>
+
+      <div class="hero__stage" aria-hidden="true">
+        <svg viewBox="0 0 560 560" xmlns="http://www.w3.org/2000/svg">
+          <circle id="heroCircleBg" cx="400" cy="150" r="170" fill="#22364C" opacity="0.7"/>
+          <g id="heroDashed" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="6 8" fill="none">
+            <path d="M120 120 L280 260"/>
+            <path d="M420 340 L300 420"/>
+          </g>
+          <rect id="heroCardBig" x="40" y="260" width="300" height="230" rx="28" fill="#22364C" stroke="#FFFFFF" stroke-opacity="0.12"/>
+          <g id="heroBars">
+            <rect x="80" y="400" width="34" height="60" rx="8" fill="#5B646F"/>
+            <rect x="128" y="370" width="34" height="90" rx="8" fill="#717982"/>
+            <rect x="176" y="340" width="34" height="120" rx="8" fill="#ED524A"/>
+            <rect x="224" y="380" width="34" height="80" rx="8" fill="#717982"/>
+          </g>
+          <rect id="heroCardBigLabel" x="80" y="290" width="140" height="16" rx="8" fill="#FFFFFF" opacity="0.7"/>
+          <circle id="heroCoralCircle" cx="290" cy="130" r="60" fill="#ED524A"/>
+          <rect id="heroSmallCard" x="360" y="330" width="150" height="150" rx="24" fill="#14212F" stroke="#FFFFFF" stroke-opacity="0.12"/>
+          <circle id="heroSmallCardBadge" cx="510" cy="330" r="26" fill="#ED524A"/>
+          <path id="heroSmallCardMark" d="M400 460 L420 405 L440 460 L433 460 L420 425 L407 460 Z" fill="#FFFFFF"/>
+          <circle id="heroOrbitSmall" cx="120" cy="90" r="10" fill="#ED524A"/>
+          <rect id="heroOrbitCard" x="90" y="60" width="60" height="60" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SERVICES ============================== -->
+  <section class="section" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What we do</p>
+        <h2 id="services-heading">Ten disciplines. One coherent system.</h2>
+        <p>Every deliverable plugs into the last one — brand feeds product, product feeds the site, the site feeds the funnel. No fragmented vendors, no starting over each quarter.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <article class="card js-reveal-up">
+          <span class="card__index">01</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6"/><rect x="10" y="10" width="9" height="9" rx="2"/></svg></div>
+          <h4>Brand Identity</h4>
+          <p>Names, marks, and systems that hold up across a pitch deck, a product UI, and a billboard.</p>
+        </article>
+
+        <article class="card js-reveal-up">
+          <span class="card__index">02</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+          <h4>Social Media Design</h4>
+          <p>Templated systems your team can produce in-house without the feed looking templated.</p>
+        </article>
+
+        <article class="card js-reveal-up">
+          <span class="card__index">03</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18"/><circle cx="6.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg></div>
+          <h4>Website Design</h4>
+          <p>Marketing sites built to be edited, not feared. Fast, on-brand, and easy to extend.</p>
+        </article>
+
+        <article class="card js-reveal-up">
+          <span class="card__index">04</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="6" rx="2"/><rect x="4" y="11" width="16" height="6" rx="2"/><rect x="4" y="19" width="10" height="2" rx="1"/></svg></div>
+          <h4>UI/UX</h4>
+          <p>Product interfaces that reduce support tickets as much as they improve conversion.</p>
+        </article>
+
+        <article class="card js-reveal-up">
+          <span class="card__index">05</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.5-5.2L16 4.3a1.8 1.8 0 0 1 2.5 0l1.2 1.2a1.8 1.8 0 0 1 0 2.5L9.2 18.5 4 20Z"/><path d="M14 6.3l3.7 3.7"/></svg></div>
+          <h4>Graphic Design</h4>
+          <p>Decks, one-pagers, and sales collateral that read like they came from the same company.</p>
+        </article>
+
+        <article class="card js-reveal-up">
+          <span class="card__index">06</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18l6-7 4 3 7-9"/><path d="M15 5h5v5"/></svg></div>
+          <h4>Performance Marketing</h4>
+          <p>Media plans built around payback period, not impressions.</p>
+        </article>
+
+        <article class="card js-reveal-up">
+          <span class="card__index">07</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M10 9.5l5 2.5-5 2.5z"/></svg></div>
+          <h4>Meta Ads</h4>
+          <p>Creative testing frameworks that find your winning angle before the budget runs out.</p>
+        </article>
+
+        <article class="card js-reveal-up">
+          <span class="card__index">08</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/></svg></div>
+          <h4>Google Ads</h4>
+          <p>Search and demand-gen campaigns built around what buyers actually type.</p>
+        </article>
+
+        <article class="card js-reveal-up">
+          <span class="card__index">09</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6Z"/><path d="M15 3v4h4"/><path d="M9 12h6M9 15.5h6M9 8.5h3"/></svg></div>
+          <h4>Content Marketing</h4>
+          <p>Editorial that ranks and reads like it was written by someone who understands the product.</p>
+        </article>
+
+        <article class="card js-reveal-up">
+          <span class="card__index">10</span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16l-6 8v6l-4 2v-8Z"/></svg></div>
+          <h4>Lead Generation</h4>
+          <p>Full-funnel systems connecting the first click to a booked call.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== WHY CHOOSE US ============================== -->
+  <section class="section why" id="why" aria-labelledby="why-heading">
+    <div class="bg-dots" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Why Anthropos</p>
+        <h2 id="why-heading">Proof, not promises.</h2>
+        <p>We'd rather show you the numbers than tell you we're great.</p>
+      </div>
+
+      <div class="why__grid">
+        <div class="stat js-reveal-up"><div class="stat__num" data-count-to="120" data-suffix="+">0</div><div class="stat__label">Projects delivered</div></div>
+        <div class="stat js-reveal-up"><div class="stat__num" data-count-to="98" data-suffix="%">0</div><div class="stat__label">Client satisfaction</div></div>
+        <div class="stat js-reveal-up"><div class="stat__num" data-count-to="40" data-suffix="%">0</div><div class="stat__label">Average lead increase</div></div>
+        <div class="stat js-reveal-up"><div class="stat__num" data-count-to="72" data-suffix=" hrs">0</div><div class="stat__label">Average design delivery</div></div>
+      </div>
+
+      <div class="why__chips">
+        <span class="chip js-reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Senior designers only</span>
+        <span class="chip js-reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Fixed-fee sprints</span>
+        <span class="chip js-reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Async-first process</span>
+        <span class="chip js-reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>No sub-agencies</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PROCESS ============================== -->
+  <section class="section" id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How we work</p>
+        <h2 id="process-heading">Four stages. No detours.</h2>
+        <p>As each engagement moves through the pipeline, the next stage is briefed on the last — nothing gets re-explained from scratch.</p>
+      </div>
+
+      <div class="pipeline process__grid">
+        <div class="pipeline__track"><div class="pipeline__fill" id="pipelineFill"></div></div>
+        <div class="pipeline__steps">
+          <div class="pipeline__step js-reveal-up" data-step="1">
+            <span class="pipeline__num">01</span>
+            <div class="pipeline__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/></svg></div>
+            <h4>Discover</h4>
+            <p class="process__step-desc">We map your product, market, and funnel before a single pixel moves.</p>
+          </div>
+          <div class="pipeline__step js-reveal-up" data-step="2">
+            <span class="pipeline__num">02</span>
+            <div class="pipeline__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.5-5.2L16 4.3a1.8 1.8 0 0 1 2.5 0l1.2 1.2a1.8 1.8 0 0 1 0 2.5L9.2 18.5 4 20Z"/></svg></div>
+            <h4>Design</h4>
+            <p class="process__step-desc">Brand, UI, and web work happen in parallel, reviewed against the same brief.</p>
+          </div>
+          <div class="pipeline__step js-reveal-up" data-step="3">
+            <span class="pipeline__num">03</span>
+            <div class="pipeline__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 3 5 7 5 11a5 5 0 0 1-10 0c0-4 2-8 5-11Z"/><path d="M9 17l-3 4M15 17l3 4"/></svg></div>
+            <h4>Launch</h4>
+            <p class="process__step-desc">Ship on a fixed date, every asset checked against real devices, not just Figma.</p>
+          </div>
+          <div class="pipeline__step js-reveal-up" data-step="4">
+            <span class="pipeline__num">04</span>
+            <div class="pipeline__node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15V4h11M20 9v11H9"/></svg></div>
+            <h4>Scale</h4>
+            <p class="process__step-desc">Paid, content, and CRO run on the system we just built — compounding, not restarting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PORTFOLIO ============================== -->
+  <section class="section" id="work" aria-labelledby="work-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="work-heading">Recent systems we've shipped.</h2>
+        <p>A sample of engagements across brand, product, and growth. Names and figures below are illustrative case studies.</p>
+      </div>
+
+      <div class="work__grid">
+
+        <a class="work-card js-reveal-up" href="#contact">
+          <div class="work-card__media">
+            <img src="images/work-vantage.svg" alt="Abstract geometric composition representing the Vantage OS dashboard redesign" loading="lazy" width="800" height="1000">
+            <div class="work-card__overlay">
+              <span class="work-card__type">Brand + Product UI</span>
+              <span class="work-card__result">+62% trial-to-paid conversion</span>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <h4>Vantage OS</h4>
+            <p>Fintech operations dashboard</p>
+          </div>
+        </a>
+
+        <a class="work-card js-reveal-up" href="#contact">
+          <div class="work-card__media">
+            <img src="images/work-loopline.svg" alt="Abstract geometric composition representing the Loopline developer tools website" loading="lazy" width="800" height="1000">
+            <div class="work-card__overlay">
+              <span class="work-card__type">Website + Positioning</span>
+              <span class="work-card__result">3.1x organic demo requests</span>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <h4>Loopline</h4>
+            <p>Developer tools platform</p>
+          </div>
+        </a>
+
+        <a class="work-card js-reveal-up" href="#contact">
+          <div class="work-card__media">
+            <img src="images/work-fernweg.svg" alt="Abstract geometric composition representing the Fernweg AI brand and launch site" loading="lazy" width="800" height="600">
+            <div class="work-card__overlay">
+              <span class="work-card__type">Full Brand + Launch</span>
+              <span class="work-card__result">#2 Product Hunt launch of the week</span>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <h4>Fernweg AI</h4>
+            <p>AI travel planning assistant</p>
+          </div>
+        </a>
+
+        <a class="work-card js-reveal-up" href="#contact">
+          <div class="work-card__media">
+            <img src="images/work-northbeam.svg" alt="Abstract geometric composition representing the Northbeam Analytics performance marketing engagement" loading="lazy" width="800" height="1000">
+            <div class="work-card__overlay">
+              <span class="work-card__type">Performance Marketing</span>
+              <span class="work-card__result">-38% CAC in 90 days</span>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <h4>Northbeam Analytics</h4>
+            <p>B2B analytics platform</p>
+          </div>
+        </a>
+
+        <a class="work-card js-reveal-up" href="#contact">
+          <div class="work-card__media">
+            <img src="images/work-cortex.svg" alt="Abstract geometric composition representing the Cortex Health UI overhaul" loading="lazy" width="800" height="600">
+            <div class="work-card__overlay">
+              <span class="work-card__type">UI/UX Overhaul</span>
+              <span class="work-card__result">+24 point NPS increase</span>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <h4>Cortex Health</h4>
+            <p>Healthtech scheduling SaaS</p>
+          </div>
+        </a>
+
+        <a class="work-card js-reveal-up" href="#contact">
+          <div class="work-card__media">
+            <img src="images/work-ledgerly.svg" alt="Abstract geometric composition representing the Ledgerly rebrand" loading="lazy" width="800" height="1000">
+            <div class="work-card__overlay">
+              <span class="work-card__type">Full Rebrand</span>
+              <span class="work-card__result">2 acquisition offers within 6 months</span>
+            </div>
+          </div>
+          <div class="work-card__body">
+            <h4>Ledgerly</h4>
+            <p>Accounting automation SaaS</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TESTIMONIALS ============================== -->
+  <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Client voices</p>
+        <h2 id="testimonials-heading">What founders say after the first quarter.</h2>
+      </div>
+    </div>
+
+    <div class="testimonials__viewport">
+      <div class="testimonial-track" id="testimonialTrack">
+
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">"Anthropos rebuilt our dashboard in six weeks. Support tickets about 'where do I find X' dropped by half."</p>
+          <footer class="testimonial__person">
+            <div class="testimonial__avatar"><img src="images/avatar-priya.svg" alt="" loading="lazy" width="48" height="48"></div>
+            <div><div class="testimonial__name">Priya Raman</div><div class="testimonial__role">Co-founder, Vantage OS</div></div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">"They rewrote our homepage copy before touching a single pixel. Demo requests were up before the new design even shipped."</p>
+          <footer class="testimonial__person">
+            <div class="testimonial__avatar"><img src="images/avatar-tom.svg" alt="" loading="lazy" width="48" height="48"></div>
+            <div><div class="testimonial__name">Tom Webb</div><div class="testimonial__role">CEO, Loopline</div></div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">"Our CAC dropped every month of the engagement. Nobody on our team wants to go back to managing five different vendors."</p>
+          <footer class="testimonial__person">
+            <div class="testimonial__avatar"><img src="images/avatar-elena.svg" alt="" loading="lazy" width="48" height="48"></div>
+            <div><div class="testimonial__name">Elena Cross</div><div class="testimonial__role">Head of Growth, Northbeam Analytics</div></div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">"We launched with a brand that felt three years ahead of where we actually were. That gap is what got us into TechCrunch."</p>
+          <footer class="testimonial__person">
+            <div class="testimonial__avatar"><img src="images/avatar-marcus.svg" alt="" loading="lazy" width="48" height="48"></div>
+            <div><div class="testimonial__name">Marcus Ade</div><div class="testimonial__role">Founder, Fernweg AI</div></div>
+          </footer>
+        </blockquote>
+
+        <!-- duplicated for seamless marquee loop, hidden from AT -->
+        <blockquote class="testimonial" aria-hidden="true">
+          <p class="testimonial__quote">"Anthropos rebuilt our dashboard in six weeks. Support tickets about 'where do I find X' dropped by half."</p>
+          <footer class="testimonial__person">
+            <div class="testimonial__avatar"><img src="images/avatar-priya.svg" alt="" loading="lazy" width="48" height="48"></div>
+            <div><div class="testimonial__name">Priya Raman</div><div class="testimonial__role">Co-founder, Vantage OS</div></div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial" aria-hidden="true">
+          <p class="testimonial__quote">"They rewrote our homepage copy before touching a single pixel. Demo requests were up before the new design even shipped."</p>
+          <footer class="testimonial__person">
+            <div class="testimonial__avatar"><img src="images/avatar-tom.svg" alt="" loading="lazy" width="48" height="48"></div>
+            <div><div class="testimonial__name">Tom Webb</div><div class="testimonial__role">CEO, Loopline</div></div>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FAQ ============================== -->
+  <section class="section" id="faq" aria-labelledby="faq-heading">
+    <div class="container faq__layout">
+      <div class="faq__side">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-heading">Before you book a call.</h2>
+        <p>Can't find your question here? Ask us directly — average reply time is under four hours.</p>
+        <a href="#contact" class="btn btn--secondary" style="margin-top:32px;">Ask a question</a>
+      </div>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            How long does a typical engagement take?
+            <span class="accordion__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="accordion__panel"><div class="accordion__panel-inner"><p>Brand and website engagements typically run four to eight weeks. Ongoing performance marketing and design retainers continue on a rolling monthly basis, reviewed every quarter.</p></div></div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            Do you work with early-stage startups?
+            <span class="accordion__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="accordion__panel"><div class="accordion__panel-inner"><p>Yes, about a third of our current roster is pre-Series A. We scope engagements to match your stage rather than running every client through the same package.</p></div></div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            What's included in a design sprint?
+            <span class="accordion__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="accordion__panel"><div class="accordion__panel-inner"><p>A senior designer, a fixed two-week timeline, source files at handoff, and two structured review rounds. No junior handoffs and no unscoped revisions.</p></div></div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            Do you offer ongoing retainer support?
+            <span class="accordion__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="accordion__panel"><div class="accordion__panel-inner"><p>Yes. Most clients move from a fixed project into a monthly retainer covering design, content, and paid media once the initial system is live.</p></div></div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            How does pricing work?
+            <span class="accordion__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="accordion__panel"><div class="accordion__panel-inner"><p>Fixed fees for defined-scope projects like brand or website design; monthly retainers for ongoing marketing and design support. You'll get a number on the first call, not after three follow-ups.</p></div></div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__trigger" aria-expanded="false">
+            Can you work with our existing brand guidelines?
+            <span class="accordion__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="accordion__panel"><div class="accordion__panel-inner"><p>Yes — a lot of our website and product work happens inside brand systems we didn't create. We'll flag anything in the existing guidelines that's actively working against your conversion goals.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CONTACT ============================== -->
+  <section class="section contact" id="contact" aria-labelledby="contact-heading">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="container contact__inner">
+      <div class="contact__side">
+        <p class="eyebrow">Get started</p>
+        <h2 id="contact-heading">Tell us where the system is breaking.</h2>
+        <p class="lede">Fifteen minutes, no deck, no pitch. We'll tell you honestly whether we're a fit.</p>
+
+        <div class="contact__meta">
+          <div class="contact__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4Z"/><path d="M4 6l8 7 8-7"/></svg>
+            <span>hello@anthropos.studio</span>
+          </div>
+          <div class="contact__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+            <span>+1 (415) 555-0142</span>
+          </div>
+          <div class="contact__meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span>Remote-first, HQ in Austin, TX</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__panel">
+        <form id="contactForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" autocomplete="organization" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="field field--full">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range</option>
+                <option value="under-10k">Under $10k</option>
+                <option value="10k-25k">$10k – $25k</option>
+                <option value="25k-50k">$25k – $50k</option>
+                <option value="50k-plus">$50k+</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="details">Project details</label>
+              <textarea id="details" name="details" rows="4" placeholder="What are you trying to fix or launch?" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary magnetic" style="width:100%; margin-top:8px;">
+            <span class="btn-label">Send project details</span>
+          </button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <a href="#top" class="brand" aria-label="Anthropos home">
+          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="16" fill="#1A2A3D"/>
+            <path d="M20 46 L32 16 L44 46 L37 46 L32 32 L27 46 Z" fill="#FFFFFF"/>
+            <circle cx="47" cy="17" r="9" fill="#ED524A"/>
+          </svg>
+          Anthropos
+        </a>
+        <p style="max-width:260px; margin-top:16px;">Design and growth systems for software companies.</p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Studio</h4>
+          <a href="#why">About</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <a href="#services">Brand Identity</a>
+          <a href="#services">Website Design</a>
+          <a href="#services">Performance Marketing</a>
+          <a href="#services">Lead Generation</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="year">2026</span> Anthropos. All rights reserved.</span>
+      <div class="footer__socials">
+        <a href="https://x.com/anthropos_studio" aria-label="Follow Anthropos on X" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/anthropos-studio" aria-label="Connect with Anthropos on LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="12" cy="17" r="2"/><path d="M7.6 8.2L10.6 15.4M16.4 8.2L13.4 15.4"/></svg>
+        </a>
+        <a href="https://www.instagram.com/anthropos.studio" aria-label="Follow Anthropos on Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================== CONFIRMATION MODAL ============================== -->
+<div class="confirm" id="confirmModal" role="alertdialog" aria-modal="true" aria-labelledby="confirmTitle">
+  <div class="confirm__card">
+    <div class="confirm__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+    <h3 id="confirmTitle" style="font-size:1.5rem; margin-bottom:12px;">Message sent</h3>
+    <p style="margin-bottom:28px;">We'll reply within one business day with next steps.</p>
+    <button class="btn btn--secondary" id="confirmClose" type="button">Close</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

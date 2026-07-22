@@ -1,0 +1,64 @@
+/* ==========================================================================
+   ANTHROPOS — RESPONSIVE
+   ========================================================================== */
+
+/* ---- Tablet (<=1024px) ----------------------------------------------------*/
+@media (max-width: 1024px) {
+  .container, .nav__inner { padding-inline: var(--pad-x-tablet); }
+  .section { padding-block: var(--section-pad-y-m); }
+
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero__stage { height: 420px; order: -1; }
+  .hero { padding-top: calc(var(--nav-h) + 40px); }
+
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+  .services__grid .card:nth-child(3n+2) { transform: none; }
+  .services__grid .card:nth-child(3n+2):hover { transform: translateY(-6px); }
+
+  .why__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .pipeline__steps { grid-template-columns: repeat(2, 1fr); row-gap: 48px; }
+  .pipeline__track { display: none; }
+
+  .work__grid { grid-template-columns: repeat(2, 1fr); }
+  .work__grid > *:nth-child(3n+1) { grid-row: auto; }
+  .work__grid > *:nth-child(3n+1) .work-card__media { aspect-ratio: 4/3; }
+
+  .faq__layout { grid-template-columns: 1fr; gap: 32px; }
+  .contact__inner { grid-template-columns: 1fr; }
+
+  .nav__links { display: none; }
+  .nav__burger { display: block; }
+}
+
+/* ---- Mobile (<=640px) -----------------------------------------------------*/
+@media (max-width: 640px) {
+  .container, .nav__inner { padding-inline: var(--pad-x-mobile); }
+  .section { padding-block: 64px; }
+
+  h1 { font-size: var(--fs-h1); }
+  .hero__ctas { flex-direction: column; align-items: stretch; }
+  .hero__ctas .btn { width: 100%; }
+  .hero__proof { flex-wrap: wrap; row-gap: 20px; }
+  .hero__stage { height: 320px; }
+
+  .services__grid { grid-template-columns: 1fr; }
+  .why__grid { grid-template-columns: repeat(2, 1fr); }
+  .stat { padding: 28px 4px; }
+
+  .pipeline__steps { grid-template-columns: 1fr; }
+
+  .work__grid { grid-template-columns: 1fr; }
+
+  .form-grid { grid-template-columns: 1fr; }
+
+  .footer__top { flex-direction: column; gap: 32px; }
+  .footer__links { gap: 40px; }
+  .footer__bottom { flex-direction: column; gap: 16px; align-items: flex-start; }
+
+  .testimonial { min-width: 88vw; }
+}
+
+@media (max-width: 380px) {
+  .why__grid { grid-template-columns: 1fr; }
+}

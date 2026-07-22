@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Abstract geometric composition of nested rounded cards and a large coral circle representing the Loopline developer tools website project">
+  <rect width="800" height="1000" fill="#1A2A3D"/>
+  <circle cx="150" cy="820" r="220" fill="#22364C"/>
+  <circle cx="150" cy="820" r="220" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="220" y="120" width="480" height="560" rx="32" fill="#22364C" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <rect x="260" y="164" width="180" height="20" rx="10" fill="#FFFFFF" opacity="0.75"/>
+  <rect x="260" y="204" width="300" height="14" rx="7" fill="#969595"/>
+  <rect x="260" y="230" width="240" height="14" rx="7" fill="#969595"/>
+  <rect x="260" y="288" width="180" height="180" rx="20" fill="#14212F"/>
+  <rect x="460" y="288" width="180" height="86" rx="20" fill="#ED524A"/>
+  <rect x="460" y="382" width="180" height="86" rx="20" fill="#14212F"/>
+  <rect x="260" y="500" width="380" height="60" rx="16" fill="#14212F"/>
+  <circle cx="686" cy="820" r="70" fill="#ED524A"/>
+  <rect x="120" y="60" width="140" height="140" rx="24" fill="#5B646F" opacity="0.5"/>
+</svg>
