@@ -1,9 +1,3 @@
-/* ==========================================================================
-   ANTHROPOS — ANIMATIONS
-   All GSAP/ScrollTrigger work lives here. Degrades gracefully: if the CDN
-   didn't load, or the user prefers reduced motion, content is simply shown
-   with no motion rather than staying hidden.
-   ========================================================================== */
 (function () {
   "use strict";
 
@@ -20,7 +14,7 @@
       if (to) el.textContent = to + suffix;
     });
     var fill = document.getElementById("pipelineFill");
-    if (fill) fill.style.width = "100%";
+    if (fill) fill.style.transform = "scaleX(1)";
   }
 
   if (typeof window.gsap === "undefined" || reduced) {
@@ -32,7 +26,6 @@
 
   document.addEventListener("DOMContentLoaded", function () {
 
-    /* ---- 1. Hero load sequence -------------------------------------------- */
     var heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
     heroTl
@@ -52,13 +45,11 @@
       .from(".hero__ctas", { opacity: 0, y: 16, duration: 0.5 }, "-=0.4")
       .from(".hero__proof", { opacity: 0, y: 16, duration: 0.5 }, "-=0.3");
 
-    // Ambient float once the load sequence settles
     gsap.to("#heroCircleBg", { y: -16, duration: 5, repeat: -1, yoyo: true, ease: "sine.inOut" });
     gsap.to("#heroCoralCircle", { y: 10, duration: 4.2, repeat: -1, yoyo: true, ease: "sine.inOut", delay: 0.3 });
     gsap.to("#heroSmallCardBadge", { scale: 1.08, duration: 2.6, repeat: -1, yoyo: true, ease: "sine.inOut", transformOrigin: "50% 50%" });
     gsap.to("#heroOrbitSmall", { scale: 1.3, opacity: 0.6, duration: 2.2, repeat: -1, yoyo: true, ease: "sine.inOut", transformOrigin: "50% 50%" });
 
-    /* ---- 2. Hero mouse parallax -------------------------------------------- */
     var heroStage = document.querySelector(".hero__stage");
     var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
     if (heroStage && fine) {
@@ -84,7 +75,6 @@
       });
     }
 
-    /* ---- 3. Generic scroll reveals ----------------------------------------- */
     gsap.utils.toArray(".js-reveal-up").forEach(function (el, i) {
       gsap.to(el, {
         opacity: 1, y: 0, duration: 0.7, ease: "power3.out",
@@ -99,7 +89,6 @@
       });
     });
 
-    /* ---- 4. Services cards: individual stagger + subtle scale-in ---------- */
     gsap.utils.toArray(".services__grid .card").forEach(function (card, i) {
       gsap.from(card, {
         opacity: 0, y: 32, scale: 0.97,
@@ -109,7 +98,6 @@
       });
     });
 
-    /* ---- 5. Animated stat counters ----------------------------------------- */
     gsap.utils.toArray(".stat__num").forEach(function (el) {
       var to = parseFloat(el.getAttribute("data-count-to"));
       var suffix = el.getAttribute("data-suffix") || "";
@@ -128,7 +116,6 @@
       });
     });
 
-    /* ---- 6. Process pipeline: fill bar + step activation ------------------- */
     var pipelineSection = document.querySelector(".pipeline");
     var pipelineFill = document.getElementById("pipelineFill");
     var steps = gsap.utils.toArray(".pipeline__step");
@@ -139,8 +126,8 @@
         end: "bottom 60%",
         scrub: 0.6,
         onUpdate: function (self) {
-          var pct = self.progress * 100;
-          pipelineFill.style.width = pct + "%";
+          var pct = self.progress;
+          pipelineFill.style.transform = "scaleX(" + pct + ")";
           var activeIndex = Math.min(steps.length - 1, Math.floor(self.progress * steps.length));
           steps.forEach(function (step, i) {
             step.classList.toggle("is-active", i <= activeIndex && self.progress > 0.02);
@@ -149,7 +136,6 @@
       });
     }
 
-    /* ---- 7. Portfolio cards reveal ------------------------------------------ */
     gsap.utils.toArray(".work-card").forEach(function (card, i) {
       gsap.from(card, {
         opacity: 0, y: 36,
@@ -159,18 +145,28 @@
       });
     });
 
-    /* ---- 8. Testimonials marquee -------------------------------------------- */
     var track = document.getElementById("testimonialTrack");
     if (track) {
-      var loopWidth = track.scrollWidth / 2;
-      var marqueeTween = gsap.to(track, {
-        x: -loopWidth,
-        duration: 32,
-        ease: "none",
-        repeat: -1
+      var marqueeTween = null;
+      var buildMarquee = function () {
+        if (marqueeTween) marqueeTween.kill();
+        gsap.set(track, { x: 0 });
+        var loopWidth = track.scrollWidth / 2;
+        marqueeTween = gsap.to(track, {
+          x: -loopWidth,
+          duration: 32,
+          ease: "none",
+          repeat: -1
+        });
+      };
+      buildMarquee();
+      var marqueeResizeTimer;
+      window.addEventListener("resize", function () {
+        clearTimeout(marqueeResizeTimer);
+        marqueeResizeTimer = setTimeout(buildMarquee, 200);
       });
-      track.addEventListener("mouseenter", function () { marqueeTween.timeScale(0.15); });
-      track.addEventListener("mouseleave", function () { marqueeTween.timeScale(1); });
+      track.addEventListener("mouseenter", function () { if (marqueeTween) marqueeTween.timeScale(0.15); });
+      track.addEventListener("mouseleave", function () { if (marqueeTween) marqueeTween.timeScale(1); });
     }
 
   });

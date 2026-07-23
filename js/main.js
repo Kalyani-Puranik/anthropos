@@ -1,14 +1,8 @@
-/* ==========================================================================
-   ANTHROPOS — MAIN
-   Theme persistence, navigation state, mobile menu, cursor, magnetic buttons.
-   Framework-free, defensive against missing elements.
-   ========================================================================== */
 (function () {
   "use strict";
 
   var root = document.documentElement;
 
-  /* ---- 1. Theme: resolve before paint to avoid a white flash ------------- */
   function applyTheme(theme) {
     if (theme === "light") {
       root.setAttribute("data-theme", "light");
@@ -28,7 +22,7 @@
   function storeTheme(theme) {
     try {
       window.localStorage.setItem("anthropos-theme", theme);
-    } catch (e) { /* storage unavailable — theme still applies for this session */ }
+    } catch (e) {  }
   }
 
   var stored = getStoredTheme();
@@ -36,21 +30,18 @@
   var initialTheme = stored || (prefersLight ? "light" : "dark");
   applyTheme(initialTheme);
 
-  /* ---- 2. Reduced motion flag for CSS + animations.js --------------------*/
   var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReducedMotion) root.classList.add("reduced-motion");
   window.ANTHROPOS_REDUCED_MOTION = prefersReducedMotion;
 
   root.classList.remove("no-js");
 
-  /* Reveal body only once theme + no-js class are settled (prevents FOUC) */
   requestAnimationFrame(function () {
     root.classList.remove("theme-resolving");
   });
 
   document.addEventListener("DOMContentLoaded", function () {
 
-    /* ---- 3. Theme toggle button ------------------------------------------*/
     var themeToggle = document.getElementById("themeToggle");
     if (themeToggle) {
       var isLight = root.getAttribute("data-theme") === "light";
@@ -66,7 +57,6 @@
       });
     }
 
-    /* ---- 4. Sticky nav scroll state --------------------------------------*/
     var nav = document.getElementById("nav");
     if (nav) {
       var SCROLL_THRESHOLD = 24;
@@ -81,7 +71,6 @@
       window.addEventListener("scroll", onScroll, { passive: true });
     }
 
-    /* ---- 5. Mobile menu ----------------------------------------------------*/
     var burger = document.getElementById("navBurger");
     var mobilePanel = document.getElementById("mobilePanel");
     if (burger && mobilePanel) {
@@ -108,11 +97,9 @@
       });
     }
 
-    /* ---- 6. Footer year ------------------------------------------------- */
     var yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-    /* ---- 7. Custom cursor (desktop / fine-pointer only) --------------------*/
     var cursorDot = document.getElementById("cursorDot");
     var hasFinePointer = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
     if (cursorDot && hasFinePointer && !prefersReducedMotion) {
@@ -144,7 +131,6 @@
       cursorDot.style.display = "none";
     }
 
-    /* ---- 8. Magnetic buttons ------------------------------------------------*/
     if (hasFinePointer && !prefersReducedMotion) {
       document.querySelectorAll(".magnetic").forEach(function (el) {
         var strength = 16;
@@ -160,7 +146,6 @@
       });
     }
 
-    /* ---- 9. FAQ accordion ---------------------------------------------------*/
     var accordion = document.getElementById("accordion");
     if (accordion) {
       var items = accordion.querySelectorAll(".accordion__item");
@@ -203,6 +188,24 @@
             }
           }
         });
+      });
+
+      var accordionResizeTimer;
+      window.addEventListener("resize", function () {
+        clearTimeout(accordionResizeTimer);
+        accordionResizeTimer = setTimeout(function () {
+          items.forEach(function (item) {
+            if (!item.classList.contains("is-open")) return;
+            var panel = item.querySelector(".accordion__panel");
+            var inner = item.querySelector(".accordion__panel-inner");
+            var target = inner.getBoundingClientRect().height;
+            if (window.gsap) {
+              gsap.set(panel, { height: target });
+            } else {
+              panel.style.height = target + "px";
+            }
+          });
+        }, 200);
       });
     }
 

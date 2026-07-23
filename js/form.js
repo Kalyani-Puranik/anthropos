@@ -1,13 +1,6 @@
-/* ==========================================================================
-   ANTHROPOS — CONTACT FORM
-   Posts to Formspree (no backend required). Replace FORMSPREE_ENDPOINT
-   below with your own form endpoint from https://formspree.io before
-   deploying — the placeholder below will not deliver submissions.
-   ========================================================================== */
 (function () {
   "use strict";
 
-  // TODO: replace with your real Formspree endpoint, e.g. https://formspree.io/f/abcdwxyz
   var FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
 
   document.addEventListener("DOMContentLoaded", function () {

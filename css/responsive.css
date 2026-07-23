@@ -1,28 +1,19 @@
-/* ==========================================================================
-   ANTHROPOS — RESPONSIVE
-   ========================================================================== */
-
-/* ---- Tablet (<=1024px) ----------------------------------------------------*/
 @media (max-width: 1024px) {
   .container, .nav__inner { padding-inline: var(--pad-x-tablet); }
   .section { padding-block: var(--section-pad-y-m); }
 
-  .hero__inner { grid-template-columns: 1fr; }
-  .hero__stage { height: 420px; order: -1; }
-  .hero { padding-top: calc(var(--nav-h) + 40px); }
+  .hero { padding-top: calc(var(--nav-h) + 32px); padding-bottom: 56px; }
+  .hero__inner { grid-template-columns: 1fr; gap: 48px; }
 
   .services__grid { grid-template-columns: repeat(2, 1fr); }
-  .services__grid .card:nth-child(3n+2) { transform: none; }
-  .services__grid .card:nth-child(3n+2):hover { transform: translateY(-6px); }
+  .services__grid .card:last-child { grid-column: auto; }
 
   .why__grid { grid-template-columns: repeat(2, 1fr); }
 
-  .pipeline__steps { grid-template-columns: repeat(2, 1fr); row-gap: 48px; }
+  .pipeline__steps { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
   .pipeline__track { display: none; }
 
   .work__grid { grid-template-columns: repeat(2, 1fr); }
-  .work__grid > *:nth-child(3n+1) { grid-row: auto; }
-  .work__grid > *:nth-child(3n+1) .work-card__media { aspect-ratio: 4/3; }
 
   .faq__layout { grid-template-columns: 1fr; gap: 32px; }
   .contact__inner { grid-template-columns: 1fr; }
@@ -31,22 +22,25 @@
   .nav__burger { display: block; }
 }
 
-/* ---- Mobile (<=640px) -----------------------------------------------------*/
 @media (max-width: 640px) {
   .container, .nav__inner { padding-inline: var(--pad-x-mobile); }
-  .section { padding-block: 64px; }
+  .section { padding-block: var(--section-pad-y-m); }
 
-  h1 { font-size: var(--fs-h1); }
+  .hero__copy { text-align: center; }
+  .hero__eyebrow { justify-content: center; }
   .hero__ctas { flex-direction: column; align-items: stretch; }
   .hero__ctas .btn { width: 100%; }
-  .hero__proof { flex-wrap: wrap; row-gap: 20px; }
-  .hero__stage { height: 320px; }
+  .hero__sub { margin-inline: auto; }
+  .hero__proof { justify-content: center; flex-wrap: wrap; row-gap: 20px; text-align: center; }
+  .hero__proof-item { text-align: center; }
 
   .services__grid { grid-template-columns: 1fr; }
-  .why__grid { grid-template-columns: repeat(2, 1fr); }
-  .stat { padding: 28px 4px; }
+  .services__grid .card:last-child { grid-column: auto; }
 
-  .pipeline__steps { grid-template-columns: 1fr; }
+  .why__grid { grid-template-columns: repeat(2, 1fr); }
+  .stat { padding: 24px 4px; }
+
+  .pipeline__steps { grid-template-columns: 1fr; row-gap: 40px; }
 
   .work__grid { grid-template-columns: 1fr; }
 
@@ -56,9 +50,18 @@
   .footer__links { gap: 40px; }
   .footer__bottom { flex-direction: column; gap: 16px; align-items: flex-start; }
 
-  .testimonial { min-width: 88vw; }
+  .testimonial { min-width: 86vw; max-width: 86vw; }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
+  .section { padding-block: var(--section-pad-y-s); }
+  .hero { padding-top: calc(var(--nav-h) + 24px); padding-bottom: 40px; }
+
   .why__grid { grid-template-columns: 1fr; }
+
+  .btn { --btn-pad-y: 14px; --btn-pad-x: 22px; font-size: 0.875rem; }
+
+  .footer__links { gap: 28px; row-gap: 32px; }
+  .card { padding: 28px; }
+  .contact__panel { padding: 28px 24px; }
 }

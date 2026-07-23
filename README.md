@@ -60,6 +60,12 @@ This is a static site — there's nothing to build or install.
 
 All imagery is original geometric SVG built from the same modular block system as the rest of the UI — there is no stock photography in this build, by design.
 
+## Changelog
+
+**Bug-fix pass (latest):** fixed a race condition where several elements (hero headline/sub/CTAs/proof, service cards, portfolio cards) had both a generic scroll-fade class and a dedicated GSAP animation targeting them at once, which could leave them stuck invisible — this was the cause of the hero text and some service cards appearing to vanish. Made the testimonial marquee and open FAQ panels recalculate on window resize instead of using a one-time pixel measurement. Pinned decorative background layers (`.bg-grid`/`.bg-dots`) behind content with `z-index: -1` so they can never paint over it. Rewrote the hero headline to "Outsource your marketing to us." with marketing in coral. All code comments have been removed from the CSS/JS/HTML source.
+
+**Polish pass:** tightened vertical rhythm across every section, made section intros (Services, Why Us, Process, Work, Testimonials) center-aligned with evenly-aligned stats, fixed the services grid so the 10th card centers itself instead of sitting orphaned in the last row, rebuilt the hero/tablet/mobile breakpoints around fluid `clamp()` sizing instead of hard pixel jumps, corrected the mobile hero order to Text → CTA → Illustration, evened out the portfolio grid to a uniform aspect ratio (previously a tall spanning card made one column visually heavier), and switched the process pipeline's scroll-driven fill from `width` to `transform: scaleX()` to keep it off the browser's layout/paint path.
+
 ## Design system
 
 - **Color:** Deep navy `#1A2A3D` as the dominant surface (~70%), white/gray for text and structure (~20%), coral `#ED524A` reserved strictly for CTAs, links, stats, and hover states (~10%).

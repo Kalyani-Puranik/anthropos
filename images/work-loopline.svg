@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Abstract geometric composition of nested rounded cards and a large coral circle representing the Loopline developer tools website project">
-  <rect width="800" height="1000" fill="#1A2A3D"/>
-  <circle cx="150" cy="820" r="220" fill="#22364C"/>
-  <circle cx="150" cy="820" r="220" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
-  <rect x="220" y="120" width="480" height="560" rx="32" fill="#22364C" stroke="#FFFFFF" stroke-opacity="0.1"/>
-  <rect x="260" y="164" width="180" height="20" rx="10" fill="#FFFFFF" opacity="0.75"/>
-  <rect x="260" y="204" width="300" height="14" rx="7" fill="#969595"/>
-  <rect x="260" y="230" width="240" height="14" rx="7" fill="#969595"/>
-  <rect x="260" y="288" width="180" height="180" rx="20" fill="#14212F"/>
-  <rect x="460" y="288" width="180" height="86" rx="20" fill="#ED524A"/>
-  <rect x="460" y="382" width="180" height="86" rx="20" fill="#14212F"/>
-  <rect x="260" y="500" width="380" height="60" rx="16" fill="#14212F"/>
-  <circle cx="686" cy="820" r="70" fill="#ED524A"/>
-  <rect x="120" y="60" width="140" height="140" rx="24" fill="#5B646F" opacity="0.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Abstract geometric composition of nested rounded cards and a large coral circle representing the Loopline developer tools website project">
+  <rect width="800" height="600" fill="#1A2A3D"/>
+  <circle cx="120" cy="480" r="160" fill="#22364C"/>
+  <circle cx="120" cy="480" r="160" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="230" y="70" width="400" height="460" rx="30" fill="#22364C" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <rect x="266" y="110" width="160" height="18" rx="9" fill="#FFFFFF" opacity="0.75"/>
+  <rect x="266" y="146" width="260" height="13" rx="6" fill="#969595"/>
+  <rect x="266" y="172" width="210" height="13" rx="6" fill="#969595"/>
+  <rect x="266" y="222" width="150" height="150" rx="18" fill="#14212F"/>
+  <rect x="430" y="222" width="150" height="70" rx="18" fill="#ED524A"/>
+  <rect x="430" y="302" width="150" height="70" rx="18" fill="#14212F"/>
+  <rect x="266" y="404" width="314" height="50" rx="14" fill="#14212F"/>
+  <circle cx="700" cy="480" r="60" fill="#ED524A"/>
+  <rect x="120" y="40" width="120" height="120" rx="22" fill="#5B646F" opacity="0.5"/>
 </svg>

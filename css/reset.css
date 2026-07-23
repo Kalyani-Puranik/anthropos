@@ -1,7 +1,3 @@
-/* ==========================================================================
-   ANTHROPOS — RESET
-   ========================================================================== */
-
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
@@ -37,7 +33,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 :target { scroll-margin-top: var(--nav-h-scrolled); }
 
-/* Respect reduced motion globally; JS also checks this before starting GSAP */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;
