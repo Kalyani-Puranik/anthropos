@@ -471,7 +471,7 @@
   z-index: 300;
   transform: translate(-50%, -50%);
   transition: width var(--dur-fast) var(--ease-out), height var(--dur-fast) var(--ease-out), opacity var(--dur-fast) var(--ease-out);
-  mix-blend-mode: difference;
+  mix-blend-mode: normal;
 }
 .cursor-dot.is-hover { width: 44px; height: 44px; background: rgba(var(--coral-rgb), 0.4); }
 .cursor-dot.is-hidden { opacity: 0; }
